@@ -1,0 +1,15 @@
+{
+  "name": "site_js_emporium",
+  "version": "1.0.0",
+  "description": "- Reproduire l'image en HTML/CSS. Pour le js vous pouvez utiliser les fonctionnalités de bootstrap sauf pour :\r - Au clique du bouton *Connection* un modal s'ouvre avec une petite navigation et un contenu qui change selon le choix\r   - Connexion **\"button de nav du modal\"**\r     - Email \r     - Mot de passe\r   - Inscription **\"button de nav du modal\"**\r     - Nom \r     - Prénom\r     - Age\r     - Email\r     - Mot de pass \r - Au scroll la navbar réapparait (voir site)\r - A côté du bouton **\"Connexion\"** deux carrés l'un blanc et l'autre noir qui permetront de changer le theme du site (au moins pour la navbar)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "bootstrap": "^4.4.1"
+  }
+}
