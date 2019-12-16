@@ -1,3 +1,70 @@
+@import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+body {
+  margin: 0;
+  overflow-x: hidden; }
 
+.titre_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px; }
+  .titre_logo img {
+    width: 165px; }
+
+.nav_bar {
+  display: flex; }
+  .nav_bar ul {
+    flex: 10;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .nav_bar ul li {
+      list-style: none; }
+      .nav_bar ul li a {
+        color: grey;
+        text-decoration: none;
+        font-size: 17px; }
+      .nav_bar ul li .nav_home {
+        color: black; }
+  .nav_bar .espace {
+    flex: 4;
+    display: flex;
+    align-items: center; }
+    .nav_bar .espace .mode_couleur {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      margin-right: 30px; }
+      .nav_bar .espace .mode_couleur .mode_white {
+        margin: 5px;
+        width: 15px;
+        height: 15px;
+        border: 1px black solid;
+        background-color: white; }
+      .nav_bar .espace .mode_couleur .mode_black {
+        margin: 5px;
+        width: 15px;
+        height: 15px;
+        border: 1px black solid;
+        background-color: black; }
+
+.button_connexion {
+  flex: 1;
+  background-color: #303030;
+  color: white;
+  width: 100px;
+  height: 40px;
+  margin-right: 50px;
+  border: none;
+  border-radius: 5px; }
+
+.div_main {
+  background-color: #f3f3f3; }
+  .div_main .div_main_colGauche_p1 {
+    color: #bd584e;
+    font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */
