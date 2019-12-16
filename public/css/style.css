@@ -1,56 +1,129 @@
-/*
-Error: Invalid property: "background-image:" (no value).
-        on line 109 of src/sass/style.sass
+@import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import 'https://fonts.googleapis.com/css?family=Poppins&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap';
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif; }
 
-104: .section1_service
-105:     display: flex
-106:     justify-content: center
-107:     align-items: center
-108:     .section1_service_1
-109:         background-image: 
-110:     .section1_service_2
-111:     .section1_service_3
+.titre_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px; }
+  .titre_logo img {
+    width: 165px; }
 
-Backtrace:
-src/sass/style.sass:109
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:733:in `parse_property'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:692:in `parse_property_or_rule'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:658:in `parse_line'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:536:in `build_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:555:in `block in append_children'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `each'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `append_children'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:545:in `block in build_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:538:in `each'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:538:in `build_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:555:in `block in append_children'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `each'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `append_children'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:545:in `block in build_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:538:in `each'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:538:in `build_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:555:in `block in append_children'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `each'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `append_children'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:409:in `_to_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
-/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid property: \"background-image:\" (no value).\A         on line 109 of src/sass/style.sass\A \A 104: .section1_service\A 105:     display: flex\A 106:     justify-content: center\A 107:     align-items: center\A 108:     .section1_service_1\A 109:         background-image: \A 110:     .section1_service_2\A 111:     .section1_service_3"; }
+.nav_bar {
+  display: flex; }
+  .nav_bar ul {
+    flex: 10;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .nav_bar ul li {
+      list-style: none; }
+      .nav_bar ul li a {
+        color: grey;
+        text-decoration: none;
+        font-size: 17px; }
+        .nav_bar ul li a:hover {
+          color: black; }
+      .nav_bar ul li .nav_home {
+        color: black; }
+  .nav_bar .espace {
+    flex: 4;
+    display: flex;
+    align-items: center; }
+    .nav_bar .espace .mode_couleur {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      margin-right: 30px; }
+      .nav_bar .espace .mode_couleur .mode_white {
+        margin: 5px;
+        width: 15px;
+        height: 15px;
+        border: 1px black solid;
+        background-color: white; }
+      .nav_bar .espace .mode_couleur .mode_black {
+        margin: 5px;
+        width: 15px;
+        height: 15px;
+        border: 1px black solid;
+        background-color: black; }
+
+.button_connexion {
+  flex: 1;
+  background-color: #303030;
+  color: white;
+  width: 100px;
+  height: 40px;
+  margin-right: 50px;
+  border: none;
+  border-radius: 5px; }
+
+.div_main {
+  background-color: #f3f3f3; }
+  .div_main .div_main_colGauche {
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .div_main .div_main_colGauche .div_main_colGauche_p1 {
+      color: #bd584e;
+      font-size: 50px; }
+    .div_main .div_main_colGauche .div_main_colGauche_p2 {
+      font-size: 130px;
+      color: black;
+      font-weight: bold; }
+    .div_main .div_main_colGauche .div_main_colGauche_p3 {
+      font-size: 20px;
+      color: #909090; }
+    .div_main .div_main_colGauche button {
+      background-color: #bd584e;
+      font-weight: bold;
+      font-family: "Source Sans Pro", sans-serif;
+      color: white;
+      border: none;
+      width: 180px;
+      padding: 20px;
+      border-radius: 40px;
+      margin-top: 30px; }
+  .div_main .div_main_colDroite img {
+    width: 750px; }
+
+.section1_service {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .section1_service div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .section1_service a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 1px white solid; }
+  .section1_service .section1_service_1 {
+    background-image: url("../../images/services/service-1.jpg");
+    background-size: cover;
+    width: 480px;
+    height: 400px; }
+  .section1_service .section1_service_2 {
+    background-image: url("../../images/services/service-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 480px;
+    height: 400px; }
+  .section1_service .section1_service_3 {
+    background-image: url("../../images/services/slider-3.jpg");
+    background-size: cover;
+    width: 480px;
+    height: 400px; }
+
+/*# sourceMappingURL=style.css.map */
