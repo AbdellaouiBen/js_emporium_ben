@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="stylesheet" href="/public/css/style.css">
     <title>emporium.</title>
 </head>
-<body>
+
+<body cl>
     <!-- header -->
     <header>
         <!-- titre  du site -->
@@ -22,11 +24,11 @@
             <div class="espace"></div>
             <ul>
                 <li><a class="nav_home" href="#"> HOME</a></li>
-                <li><a href="#"> PRODUCT</a></li>
-                <li><a href="#"> BLOG</a></li>
-                <li><a href="#"> ELEMENTS</a></li>
-                <li><a href="#"> ABOUT</a></li>
-                <li><a href="#"> CONTACT</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">ELEMENTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
             <div class="espace">
                 <!--2 carres changement couleur du site -->
@@ -39,10 +41,9 @@
                     <button class="button_connexion">Connexion</button>
                 </div>
             </div>
-                
         </nav>
         <!--main -->
-        <div class="div_main row">
+        <div class="div_main row no-gutters">
             <!-- text col gauche-->
             <div class="div_main_colGauche col-6 container">
                 <p class="div_main_colGauche_p1">Shop at</p>
@@ -62,32 +63,32 @@
 
 
     <!--SECTION 1_______ selection service  -->
-    <section class="section1_service row my-5">
+    <section class="section1_service rown no-gutters my-5">
 
-        <div class="col-4">
-            <div class="section1_service_1">
+        <div class="col-4 justify-content-center">
+            <div class="section1_service_1 image_form_s1">
                 <a href="#">
-                    <p>Living Room</p> 
+                    <p>Living Room</p>
                 </a>
             </div>
         </div>
 
         <div class="col-4">
-            <div class="section1_service_2">
+            <div class="section1_service_2 image_form_s1">
                 <a href="#">
-                    <p>Sale Items</p> 
+                    <p>Sale Items</p>
                 </a>
             </div>
-            
+
         </div>
 
         <div class="col-4">
-            <div class="section1_service_3">
+            <div class="section1_service_3 image_form_s1 ">
                 <a href="#">
                     <p>Clothes</p>
                 </a>
             </div>
-            
+
         </div>
     </section>
 
@@ -96,185 +97,214 @@
 
 
     <!--SECTION 2_______ produits recents -->
-    <section>
-        <div>
-            <h1>Recent products</h1>
+    <section id="section_2">
+        <div class="petit_titre">
+            <h1 class="mb-5 py-5">Recent products</h1>
         </div>
+
+
+
         <!-- ligne 1 -->
         <div class="row">
-            <div class="col-3">
+            <div class="col-4 text-center image_form_s2 p-0">
                 <img src="/images/products_mini/product-luxry-sofa.jpg" alt="">
-                <p>Luxury Sofa</p>
-                <p>$600</p>
+                <p><a href="#">Luxury Sofa</a> </p>
+                <p class="prix">$600</p>
             </div>
-            <div class="col-3">
+
+            <div class="col-4 image_form_s2 p-0">
                 <img src="/images/products_mini/product-gloves.jpg" alt="">
-                <p>Leather Gloves</p>
-                <p><span>Sale!</span> <span>$34.00</span>$27.00   </p>
+
+                <div class="row">
+                    <div class="col-2 offset-2 pt-3">
+                        <div class="icon_sale">
+                            <p>Sale!</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <p><a href="#">Leather Gloves</a> </p>
+                        <p class="prix"> <span class="prix_old_price"><del>$34.00 </del> </span> $27.00 </p>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-3">
+            <div class="col-4 image_form_s2 p-0">
                 <img src="/images/products_mini/product-cups.jpg" alt="">
-                <p>Colorful Bowl</p>
-                <p>$18.00</p>
+                <p><a href="#">Colorful Bowl</a> </p>
+                <p class="prix">$18.00</p>
             </div>
         </div>
+
+
         <!-- ligne 2 -->
         <div class="row">
-                <div class="col-3">
-                    <img src="/images/products_mini/product-bag.jpg" alt="">
-                    <p>Women Bag</p>
-                    <p><span>Sale!</span> <span>$420.00</span>$350.00  </p>
-                </div>
-                <div class="col-3">
-                    <img src="/images/products_mini/product-tshitr.jpg" alt="">
-                    <p>Minimal T-Shirt</p>
-                    <p>$15.00</p>
-                </div>
-                <div class="col-3">
-                    <img src="/images/products_mini/product-plates.jpg" alt="">
-                    <p>Plates Set</p>
-                    <p>$30.00</p>
-                </div>
-            </div>
-            <!-- ligne 3 -->
-        <div class="row">
-                <div class="col-3">
-                    <img src="/images/products_mini/product-modern-sofa.jpg" alt="">
-                    <p>Modern Sofa</p>
-                    <p>$900.00 </p>
-                </div>
-                <div class="col-3">
-                    <img src="/images/products_mini/product-bed.jpg" alt="">
-                    <p>Bed Linen</p>
-                    <p>$79.00 </p>
-                </div>
-                <div class="col-3">
-                    <img src="/images/products_mini/product-shoes.jpg" alt="">
-                    <p>Minimal Shoes</p>
-                    <p>$60.00</p>
-                </div>
-            </div>
-    </section>
-    <!--SECTION 3_______ leatn more -->
-    <section>
-        <h1>Discover Thousands Of Great Products</h1>
-        <button>Learn More</button>
-    </section>
-    <!-- SECTION 4_______ Hot Fashion products (carousel) -->
-    <section>
-        <h1>Hot Fashion Products</h1>
-        <div>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active row">
-                                <div class="col-3">
-                                    <img src="/images/products/product-tshitr-white-700x500.jpg" alt="">
-                                    <p>White T-Shirt</p>
-                                    <p>$23.00</p>
-                                </div>
-                                <div class="col-3">
-                                    <img src="/images/products/product-bag-700x500.jpg" alt="">
-                                    <p>Red Bag</p>
-                                    <p><span>Sale!</span> <span>$600.00</span>$450.00  </p>
-                                </div>
-                                <div class="col-3">
-                                    <img src="/images/products/product-jacket-700x500.jpg" alt="">
-                                    <p>Sporty Jacket</p>
-                                    <p>$40</p>
-                                </div>
-                                <div class="col-3">
-                                    <img src="/images/products/product-shoes-700x500.jpg" alt="">
-                                    <p>Minimal Shoes</p>
-                                    <p>$60</p>
-                                </div>
-                          </div>
-                          <div class="carousel-item">
-                                <div class="col-3">
-                                        <img src="/images/products/product-tshitr-white-700x500.jpg" alt="">
-                                        <p>White T-Shirt</p>
-                                        <p>$23.00</p>
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="/images/products/product-bag-700x500.jpg" alt="">
-                                        <p>Red Bag</p>
-                                        <p><span>Sale!</span> <span>$600.00</span>$450.00  </p>
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="/images/products/product-jacket-700x500.jpg" alt="">
-                                        <p>Sporty Jacket</p>
-                                        <p>$40</p>
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="/images/products/product-shoes-700x500.jpg" alt="">
-                                        <p>Minimal Shoes</p>
-                                        <p>$60</p>
-                                    </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                          </div>
+
+
+            <div class="col-4 image_form_s2 p-0">
+                <img src="/images/products_mini/product-bag.jpg" alt="">
+                <div class="row">
+                    <div class="col-2 offset-2 pt-3">
+                        <div class="icon_sale">
+                            <p>Sale!</p>
                         </div>
+                    </div>
+                    <div class="col-6">
+                        <p><a href="#">Women Bag</a> </p>
+                        <p class="prix"> <span class="prix_old_price"><del>$420.00</del> </span> $350.00 </p>
+                    </div>
                 </div>
+            </div>
+            <div class="col-4 image_form_s2 p-0">
+                <img src="/images/products_mini/product-tshitr.jpg" alt="">
+                <p><a href="#">Minimal T-Shirt</a> </p>
+                <p class="prix">$15.00</p>
+            </div>
+            <div class="col-4 image_form_s2 p-0">
+                <img src="/images/products_mini/product-plates.jpg" alt="">
+                <p><a href="#">Plates Set</a> </p>
+                <p class="prix">$30.00</p>
+            </div>
+        </div>
+        <!-- ligne 3 -->
+        <div class="row">
+            <div class="col-4 image_form_s2 p-0">
+                <img src="/images/products_mini/product-modern-sofa.jpg" alt="">
+                <p><a href="#">Modern Sofa</a> </p>
+                <p class="prix">$900.00 </p>
+            </div>
+            <div class="col-4 image_form_s2 p-0">
+                <img src="/images/products_mini/product-bed.jpg" alt="">
+                <p><a href="#">Bed Linen</a> </p>
+                <p class="prix">$79.00 </p>
+            </div>
+            <div class="col-4 image_form_s2 p-0">
+                <img src="/images/products_mini/product-shoes.jpg" alt="">
+                <p><a href="#">Minimal Shoes</a> </p>
+                <p class="prix">$60.00</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--SECTION 3_______ leatn more -->
+    <section class="section_3">
+        <div>
+            <h1>Discover Thousands Of Great Products</h1>
+            <button>Learn More</button>
+        </div>
+    </section>
+
+
+
+
+    <!-- titre -->
+    <div class="petit_titre mb-5 py-5">
+        <h1>Hot Fashion Products</h1>
+    </div>
+    <!-- SECTION 4_______ Hot Fashion products (carousel) -->
+    <section id="section_4">
+        <div>
+            <img src="/images/products/product-tshitr-white-700x500.jpg" alt="">
+            <p>White T-Shirt</p>
+            <p>$23.00</p>
         </div>
 
+        <div>
+            <img src="/images/products/product-bag-700x500.jpg" alt="">
+            <p>Red Bag</p>
+            <p><span>Sale!</span> <span>$600.00</span>$450.00 </p>
+        </div>
 
+        <div>
+            <img src="/images/products/product-jacket-700x500.jpg" alt="">
+            <p>Sporty Jacket</p>
+            <p>$40</p>
+        </div>
 
+        <div>
+            <img src="/images/products/product-shoes-700x500.jpg" alt="">
+            <p>Minimal Shoes</p>
+            <p>$60</p>
+        </div>
 
     </section>
+
+
+
     <!-- SECTION 5_______ 3 cards -->
-    <section>
-        <div>
-            <i></i>
-            <h1></h1>
-            <p></p>
-            <button>LEARN MORE</button>
+    <section id="section_5" class="row justify-content-around mx-2">
+        <div class="col-4 ">
+            <div class="section_5_div_exte">
+                <i class="far fa-check-circle"></i>
+                <h1>TRUSTED BY 10,000+ CUSTOMERS</h1>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.</p>
+                <button>LEARN MORE</button>
+            </div>
         </div>
-        <div>
-            <i></i>
-            <h1></h1>
-            <p></p>
-            <button>LEARN MORE</button>
+
+        <div class="col-4 ">
+            <div class="section_5_div_inte">
+                <i class="fas fa-paper-plane"></i>
+                <h1>VERY FAST SHIPPING</h1>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.</p>
+                <button>LEARN MORE</button>
+            </div>
         </div>
-        <div>
-            <i></i>
-            <h1></h1>
-            <p></p>
-            <button>LEARN MORE</button>
+
+        <div class="col-4">
+            <div class="section_5_div_exte">
+                <i class="far fa-check-circle"></i>
+                <h1>TRUSTED BY 10,000+ CUSTOMERS</h1>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.</p>
+                <button>LEARN MORE</button>
+            </div>
+
         </div>
 
 
 
     </section>
     <!-- FOOTER______ -->
-    <footer >
+    <footer>
         <!-- footer haut -->
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 p-0">
                 <h2>ABOUT US</h2>
-                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of</p>
+                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                    which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which
+                    was created for the bliss of</p>
             </div>
-            <div class="col-4">
+            <div class="col-4 p-0">
                 <h2>RECENT POSTS</h2>
-                <div>><span>hello world!</span></div>
+                <div>> <span>hello world!</span></div>
                 <hr>
-                <div>><span>Wonderful serenity has taken</span></div>
+                <div>> <span>Wonderful serenity has taken</span></div>
                 <hr>
-                <div>><span>In my soul and absorb its power</span></div>
+                <div>> <span>In my soul and absorb its power</span></div>
                 <hr>
-                <div>><span>I hear the buzz of the little</span></div>
+                <div>> <span>I hear the buzz of the little</span></div>
                 <hr>
             </div>
-            <div class="col-4">
+            <div class="col-4 p-0">
                 <h2>TAG CLOUD</h2>
                 <div>
                     <span class="tag_cloud">BUSINESS</span>
                     <span class="tag_cloud">CONFERENCE</span>
+                    <br>
                     <span class="tag_cloud">GADGETS</span>
                     <span class="tag_cloud">IDENTITY</span>
+                    <br>
                     <span class="tag_cloud">LOGO</span>
                     <span class="tag_cloud">PHOTOGRAPHY</span>
+                    <br>
                     <span class="tag_cloud">TIME</span>
                     <span class="tag_cloud">TRIPS</span>
+                    <br>
                     <span class="tag_cloud">WORKS</span>
                     <span class="tag_cloud">WORK SPACE</span></span>
                 </div>
@@ -288,7 +318,7 @@
 
 
 
-    
+
 
 
 
@@ -299,4 +329,5 @@
 
     <script src="./public/js/main.js"></script>
 </body>
+
 </html>

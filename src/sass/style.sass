@@ -1,25 +1,27 @@
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"    
+@import "../../node_modules/node_modules/@fortawesome/fontawesome-free/css/all.min.css"    
 @import "./_variables.sass"
 
 @import 'https://fonts.googleapis.com/css?family=Poppins&display=swap'
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'
 
-body 
-    margin: 0
-    font-family: 'Poppins', sans-serif
-
+body     
+    margin: 0           
+    font-family: 'Poppins', sans-serif   
+ 
 // titre logo
-.titre_logo
+.titre_logo     
     display: flex
     align-items: center
     justify-content: center
-    height: 200px  
-    img 
-        width: 165px 
-// navbar
+    height: 200px 
 
-.nav_bar 
-    display: flex
+    img     
+        width: 165px 
+// navbar 
+
+.nav_bar          
+    display: flex      
     ul 
         flex: 10
         display: flex
@@ -30,7 +32,7 @@ body
         padding-bottom: 20px  
         li 
             list-style: none
-            a
+            a    
                 color: grey 
                 text-decoration: none
                 font-size: 17px  
@@ -80,28 +82,30 @@ body
         justify-content: center
         .div_main_colGauche_p1
             color: #bd584e 
-            font-size: 50px   
+            font-size: 40px   
         .div_main_colGauche_p2
-            font-size: 130px 
+            font-size: 90px  
             color: black 
             font-weight: bold
         .div_main_colGauche_p3
-            font-size: 20px
+            font-size: 15px 
             color: #909090
         button
+            font-size: 15px 
             background-color: #bd584e  
             font-weight: bold
             font-family: 'Source Sans Pro', sans-serif
             color: white
-            border: none 
+            border: none  
             width: 180px     
             padding: 20px 
             border-radius: 40px 
             margin-top: 30px   
     .div_main_colDroite
         img 
-            width: 750px
-        
+            width: 550px 
+
+////////////////////////////////////////////////////////////
 // section 1
 .section1_service
     display: flex 
@@ -111,31 +115,129 @@ body
         display: flex
         justify-content: center
         align-items: center
-
+ 
     a 
         text-decoration: none
         color: white
-        font-size: 40px 
+        font-size: 25px   
         font-weight: bold
         border-bottom: 1px white solid
 
+    .image_form_s1    
+        background-size: cover
+        background-position: center 
+        background-repeat: no-repeat 
+        width: 380px 
+        height: 266px 
+
     .section1_service_1
         background-image: url("../../images/services/service-1.jpg")
-        background-size: cover
-        width: 480px   
-        height: 400px 
+         
     .section1_service_2
-        background-image: url("../../images/services/service-2.jpg")
-        background-size: cover
-        background-repeat: no-repeat 
-        width: 480px   
-        height: 400px 
+        background-image: url("../../images/services/service-2.jpg")  
     .section1_service_3
         background-image: url("../../images/services/slider-3.jpg")
-        background-size: cover
-        width: 480px       
-        height: 400px 
+
+///////////////////////////////////////////////////////////////////
+// section 2
+.petit_titre
+    display: flex
+    justify-content: center
+    font-size: 23px 
+    font-weight: 700  
+#section_2
+    a 
+        font-weight: bold
+        font-size: 23px  
+        text-decoration: none
+        color: #191919  
+    .petit_titre
+        display: flex
+        justify-content: center 
+        h1 
+            font-weight: bold
+            font-size: 29px  
+            color: #383838
+    .row
+        text-align: center
+    img
+        width: 354px      
+        height: 278px     
+    .icon_sale_position
+        justify-content: flex-end!important 
+    .icon_sale
+        color: white
+        background-color: #bd584e
+        border-radius: 50%
+        font-size: 13px
+        font-weight: 600
+        line-height: 48px
+        width: 48px
+        padding: 2px 0 0
+        height: 48px
+    .prix
+        color: #bd584e 
+        font-weight: bold
+        .prix_old_price
+            color: grey
+
+ 
+////////////////////////////////////////////////
+// section 3 
+.section_3
+    background-image: url(../../images/cta-bg.jpg)
+    background-size: cover
+    background-position: center
+    background-attachment: fixed    
+    height: 709px 
+    display: flex
+    align-items: center
+    justify-content: center
+
+    div
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        h1 
+            font-weight: bold
+            color: white 
+        button
+            font-size: 15px 
+            background-color: #bd584e  
+            font-weight: bold
+            font-family: 'Source Sans Pro', sans-serif
+            color: white
+            border: none  
+            width: 180px     
+            padding: 17px  
+            border-radius: 40px 
+            margin-top: 30px 
+
+/////////////////////////////////////////////////////////////
+// section 4
+#section_4
+    display: flex
     
+    img
+        width: 100px 
+
+///////////////////////////////////////////:
+// section 5 
+#section_5
+    .section_5_div_exte
+        height: 500px
+        background-color: #f3f3f3
+    .section_5_div_inte
+        height: 500px 
+        background-color: #bd584e
+
+
+ 
+
+ 
+
+
 
     
 
