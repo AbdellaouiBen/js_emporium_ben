@@ -1,6 +1,9 @@
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"    
-@import "../../node_modules/node_modules/@fortawesome/fontawesome-free/css/all.min.css"    
-@import "./_variables.sass"
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" 
+
+@import "./import/_blackMode.sass"
+@import "./import/_modalConnexion.sass"
+
 
 @import 'https://fonts.googleapis.com/css?family=Poppins&display=swap'
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'
@@ -8,20 +11,21 @@
 body     
     margin: 0           
     font-family: 'Poppins', sans-serif   
- 
-// titre logo
+   
+// titre logo   
 .titre_logo     
     display: flex
-    align-items: center
-    justify-content: center
+    align-items: center 
+    justify-content: center 
     height: 200px 
 
-    img     
+    img       
         width: 165px 
-// navbar 
+// navbar  
 
 .nav_bar          
-    display: flex      
+    display: flex   
+    background-color: white    
     ul 
         flex: 10
         display: flex
@@ -59,7 +63,7 @@ body
                 margin: 5px
                 width: 15px
                 height: 15px 
-                border: 1px black solid
+                border: 1px white solid
                 background-color: black
 // boutton de connexion
 .button_connexion
@@ -211,7 +215,7 @@ body
             border: none  
             width: 180px     
             padding: 17px  
-            border-radius: 40px 
+            border-radius: 40px  
             margin-top: 30px 
 
 /////////////////////////////////////////////////////////////
@@ -225,17 +229,136 @@ body
 ///////////////////////////////////////////:
 // section 5 
 #section_5
+    text-align: center
+    i 
+        font-size: 40px 
+        margin-bottom: 40px    
+    h1 
+        font-size: 20px 
+        font-weight: 700 
+        margin-bottom: 40px   
+    p 
+        width: 200px    
     .section_5_div_exte
-        height: 500px
+        width: 90% 
+        display: flex
+        flex-direction: column 
+        justify-content: center  
+        align-items: center
+        height: 550px
         background-color: #f3f3f3
+        button 
+            padding: 10px 20px 
+            color: white 
+            border: none
+            background-color: #303030 
+            border-radius: 5px 
+            font-family: 'Source Sans Pro', sans-serif
+            font-size: bold 
+         
     .section_5_div_inte
-        height: 500px 
+        width: 90%  
+        display: flex
+        flex-direction: column     
+        justify-content: center 
+        align-items: center
+        height: 550px 
         background-color: #bd584e
+        color: white     
+        button 
+            padding: 10px 20px 
+            color: #303030  
+            border: none
+            background-color: white 
+            border-radius: 5px 
+            font-family: 'Source Sans Pro', sans-serif
+            font-size: bold 
 
 
+//////////////////////////////////////////////////////////////
+// footer partie haute
+footer 
+    font-family: 'Source Sans Pro', sans-serif
+.footer_haut
+    color: #969696
+    background-color: #212121
+    font-size: 15px 
+    padding-top: 20px  
+    line-height: 30px 
+    
+    padding-top: 50px 
+    padding-bottom: 50px  
+    margin-top: 50px 
+    h4 
+        font-family: 'Poppins', sans-serif   
+        color: white 
+        font-weight: bold          
+        font-size: 15px 
+        margin-bottom: 40px   
+    .footer_haut_div1 
+        width: 80%  
+ 
+    .footer_haut_div2
+        border-right: 1px solid #4b4b4b
+        border-left: 1px solid #4b4b4b 
+        padding-left: 50px 
+        padding-right: 50px  
+        span:hover  
+            transition: 1s  
+            color: white  
+        hr 
+            border: 1px solid #4b4b4b
+    .footer_haut_div3  
+        width: 80% 
+        span 
+            padding: 10px 
+            border: 1px solid #4b4b4b  
+            line-height: 50px        
+            margin-right: 8px
+        span:hover
+            transition: 1s 
+            color: white    
  
 
- 
+// footer partie basse 
+.footer_bas
+    display: flex
+    justify-content: center 
+    align-items: center
+    background-color: black 
+    padding: 50px 
+    h1 
+        color: #757575 
+        font-size: 14px  
+        font-weight: bold 
+
+
+
+
+/**********************************************
+    */
+
+/* Style the navbar links */
+.sticky 
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 3
+.imgNav
+    position: absolute  
+    z-index: 4
+
+
+
+       
+
+
+
+
+
+
+
+
 
 
 

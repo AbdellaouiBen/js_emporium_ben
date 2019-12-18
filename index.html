@@ -9,41 +9,45 @@
     <title>emporium.</title>
 </head>
 
-<body cl>
+<body class="mode_day">
     <!-- header -->
     <header>
-        <!-- titre  du site -->
-        <div class="titre_logo">
-            <a href="#">
-                <img src="./images/logo.png" alt="">
-            </a>
-        </div>
-        <!-- navbar -->
-        <nav class="nav_bar">
-            <!-- div qui sert d'espace -->
-            <div class="espace"></div>
-            <ul>
-                <li><a class="nav_home" href="#"> HOME</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">ELEMENTS</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-            <div class="espace">
-                <!--2 carres changement couleur du site -->
-                <div class="mode_couleur">
-                    <div class="mode_black"></div>
-                    <div class="mode_white"></div>
-                </div>
-                <!-- bouton connexion -->
-                <div>
-                    <button class="button_connexion">Connexion</button>
-                </div>
+        <div class="blackkk">
+
+
+            <!-- titre  du site -->
+            <div class="titre_logo">
+                <a href="#">
+                    <img src="./images/logo.png" alt="">
+                </a>
             </div>
-        </nav>
+            <!-- navbar -->
+            <nav class="nav_bar">
+                <!-- div qui sert d'espace -->
+                <div class="espace"></div>
+                <ul>
+                    <li><a class="nav_home" href="#"> HOME</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">ELEMENTS</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="espace">
+                    <!--2 carres changement couleur du site -->
+                    <div class="mode_couleur">
+                        <div class="mode_white"></div>
+                        <div class="mode_black"></div>
+                    </div>
+                    <!-- bouton connexion -->
+                    <div>
+                        <button id="myBtn" class="button_connexion">Connexion</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <!--main -->
-        <div class="div_main row no-gutters">
+        <div class="div_main row no-gutters mode_black">
             <!-- text col gauche-->
             <div class="div_main_colGauche col-6 container">
                 <p class="div_main_colGauche_p1">Shop at</p>
@@ -55,15 +59,17 @@
             </div>
             <!-- image col droite -->
             <div class="div_main_colDroite col-6">
-                <img src="./images/slider-1.jpg" alt="">
+                <img src="./images/screen_main.png" alt="">
             </div>
         </div>
+
+
     </header>
 
 
 
     <!--SECTION 1_______ selection service  -->
-    <section class="section1_service rown no-gutters my-5">
+    <section class="section1_service row no-gutters py-5 s1_black">
 
         <div class="col-4 justify-content-center">
             <div class="section1_service_1 image_form_s1">
@@ -90,14 +96,15 @@
             </div>
 
         </div>
-    </section>
 
+    </section>
 
 
 
 
     <!--SECTION 2_______ produits recents -->
     <section id="section_2">
+
         <div class="petit_titre">
             <h1 class="mb-5 py-5">Recent products</h1>
         </div>
@@ -105,24 +112,24 @@
 
 
         <!-- ligne 1 -->
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-4 text-center image_form_s2 p-0">
                 <img src="/images/products_mini/product-luxry-sofa.jpg" alt="">
-                <p><a href="#">Luxury Sofa</a> </p>
+                <p><a class="nom_black" href="#">Luxury Sofa</a> </p>
                 <p class="prix">$600</p>
             </div>
 
             <div class="col-4 image_form_s2 p-0">
                 <img src="/images/products_mini/product-gloves.jpg" alt="">
 
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="col-2 offset-2 pt-3">
                         <div class="icon_sale">
                             <p>Sale!</p>
                         </div>
                     </div>
                     <div class="col-6">
-                        <p><a href="#">Leather Gloves</a> </p>
+                        <p><a class="nom_black" href="#">Leather Gloves</a> </p>
                         <p class="prix"> <span class="prix_old_price"><del>$34.00 </del> </span> $27.00 </p>
                     </div>
                 </div>
@@ -130,189 +137,292 @@
             </div>
             <div class="col-4 image_form_s2 p-0">
                 <img src="/images/products_mini/product-cups.jpg" alt="">
-                <p><a href="#">Colorful Bowl</a> </p>
+                <p><a class="nom_black" href="#">Colorful Bowl</a> </p>
                 <p class="prix">$18.00</p>
             </div>
         </div>
 
 
         <!-- ligne 2 -->
-        <div class="row">
+        <div class="row no-gutters">
 
 
             <div class="col-4 image_form_s2 p-0">
                 <img src="/images/products_mini/product-bag.jpg" alt="">
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="col-2 offset-2 pt-3">
                         <div class="icon_sale">
                             <p>Sale!</p>
                         </div>
                     </div>
                     <div class="col-6">
-                        <p><a href="#">Women Bag</a> </p>
+                        <p><a class="nom_black" href="#">Women Bag</a> </p>
                         <p class="prix"> <span class="prix_old_price"><del>$420.00</del> </span> $350.00 </p>
                     </div>
                 </div>
             </div>
             <div class="col-4 image_form_s2 p-0">
                 <img src="/images/products_mini/product-tshitr.jpg" alt="">
-                <p><a href="#">Minimal T-Shirt</a> </p>
+                <p><a class="nom_black" href="#">Minimal T-Shirt</a> </p>
                 <p class="prix">$15.00</p>
             </div>
             <div class="col-4 image_form_s2 p-0">
                 <img src="/images/products_mini/product-plates.jpg" alt="">
-                <p><a href="#">Plates Set</a> </p>
+                <p><a class="nom_black" href="#">Plates Set</a> </p>
                 <p class="prix">$30.00</p>
             </div>
         </div>
         <!-- ligne 3 -->
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-4 image_form_s2 p-0">
                 <img src="/images/products_mini/product-modern-sofa.jpg" alt="">
-                <p><a href="#">Modern Sofa</a> </p>
+                <p><a class="nom_black" href="#">Modern Sofa</a> </p>
                 <p class="prix">$900.00 </p>
             </div>
             <div class="col-4 image_form_s2 p-0">
                 <img src="/images/products_mini/product-bed.jpg" alt="">
-                <p><a href="#">Bed Linen</a> </p>
+                <p><a class="nom_black" href="#">Bed Linen</a> </p>
                 <p class="prix">$79.00 </p>
             </div>
             <div class="col-4 image_form_s2 p-0">
                 <img src="/images/products_mini/product-shoes.jpg" alt="">
-                <p><a href="#">Minimal Shoes</a> </p>
+                <p><a class="nom_black" href="#">Minimal Shoes</a> </p>
                 <p class="prix">$60.00</p>
             </div>
         </div>
+
     </section>
 
 
 
+    <div class="black">
+        <!--SECTION 3_______ leatn more -->
+        <section class="section_3">
+            <div>
+                <h1>Discover Thousands Of Great Products</h1>
+                <button>Learn More</button>
+            </div>
 
-    <!--SECTION 3_______ leatn more -->
-    <section class="section_3">
-        <div>
-            <h1>Discover Thousands Of Great Products</h1>
-            <button>Learn More</button>
+
+        </section>
+
+
+
+
+        <!-- titre -->
+        <div class="petit_titre mb-5 py-5 ">
+            <h1>Hot Fashion Products</h1>
         </div>
-    </section>
+        <!-- SECTION 4_______ Hot Fashion products (carousel) -->
+        <section id="section_4">
+            <div>
+                <img src="/images/products/product-tshitr-white-700x500.jpg" alt="">
+                <p class="nom_black">White T-Shirt</p>
+                <p>$23.00</p>
+            </div>
+
+            <div>
+                <img src="/images/products/product-bag-700x500.jpg" alt="">
+                <p class="nom_black">Red Bag</p>
+                <p><span>Sale!</span> <span>$600.00</span>$450.00 </p>
+            </div>
+
+            <div>
+                <img src="/images/products/product-jacket-700x500.jpg" alt="">
+                <p class="nom_black">Sporty Jacket</p>
+                <p>$40</p>
+            </div>
+
+            <div>
+                <img src="/images/products/product-shoes-700x500.jpg" alt="">
+                <p class="nom_black">Minimal Shoes</p>
+                <p>$60</p>
+            </div>
+
+        </section>
 
 
 
+        <!-- SECTION 5_______ 3 cards -->
+        <section id="section_5" class="row mx-2 no-gutters">
+            <div class="col-4 ">
+                <div class="section_5_div_exte">
+                    <i class="far fa-check-circle"></i>
+                    <h1>TRUSTED BY 10,000+ CUSTOMERS</h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <div class="container">
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
 
-    <!-- titre -->
-    <div class="petit_titre mb-5 py-5">
-        <h1>Hot Fashion Products</h1>
+            <div class="col-4 ">
+                <div class="section_5_div_inte">
+                    <i class="fas fa-paper-plane"></i>
+                    <h1>VERY FAST SHIPPING</h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <div class="container">
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="section_5_div_exte">
+                    <i class="far fa-check-circle"></i>
+                    <h1>TRUSTED BY 10,000+ CUSTOMERS</h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <div class="container">
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <!-- FOOTER______ -->
+        <footer>
+            <!-- footer haut -->
+            <div class="row footer_haut no-gutters ">
+                <div class="col-4 p-0">
+                    <div class="container footer_haut_div1">
+                        <h4>ABOUT US</h4>
+                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                            spring
+                            which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot,
+                            which
+                            was created for the bliss of</p>
+                    </div>
+
+                </div>
+                <div class="col-4 p-0 ">
+                    <div class="container footer_haut_div2 ">
+                        <h4>RECENT POSTS</h4>
+                        <div>> <span>hello world!</span></div>
+                        <hr>
+                        <div>> <span>Wonderful serenity has taken</span></div>
+                        <hr>
+                        <div>> <span>In my soul and absorb its power</span></div>
+                        <hr>
+                        <div>> <span>I hear the buzz of the little</span></div>
+                        <hr>
+                    </div>
+
+                </div>
+                <div class="col-4 p-0 ">
+                    <div class="container footer_haut_div3">
+                        <h4>TAG CLOUD</h4>
+                        <div>
+                            <span class="tag_cloud">BUSINESS</span>
+                            <span class="tag_cloud">CONFERENCE</span>
+                            <span class="tag_cloud">GADGETS</span>
+                            <span class="tag_cloud">IDENTITY</span>
+                            <span class="tag_cloud">LOGO</span>
+                            <span class="tag_cloud">PHOTOGRAPHY</span>
+                            <span class="tag_cloud">TIME</span>
+                            <span class="tag_cloud">TRIPS</span>
+                            <span class="tag_cloud">WORKS</span>
+                            <span class="tag_cloud">WORK SPACE</span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- footer bas -->
+            <div class="footer_bas">
+
+                <h1>COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</h1>
+            </div>
+        </footer>
+
     </div>
-    <!-- SECTION 4_______ Hot Fashion products (carousel) -->
-    <section id="section_4">
-        <div>
-            <img src="/images/products/product-tshitr-white-700x500.jpg" alt="">
-            <p>White T-Shirt</p>
-            <p>$23.00</p>
-        </div>
-
-        <div>
-            <img src="/images/products/product-bag-700x500.jpg" alt="">
-            <p>Red Bag</p>
-            <p><span>Sale!</span> <span>$600.00</span>$450.00 </p>
-        </div>
-
-        <div>
-            <img src="/images/products/product-jacket-700x500.jpg" alt="">
-            <p>Sporty Jacket</p>
-            <p>$40</p>
-        </div>
-
-        <div>
-            <img src="/images/products/product-shoes-700x500.jpg" alt="">
-            <p>Minimal Shoes</p>
-            <p>$60</p>
-        </div>
-
-    </section>
 
 
 
-    <!-- SECTION 5_______ 3 cards -->
-    <section id="section_5" class="row justify-content-around mx-2">
-        <div class="col-4 ">
-            <div class="section_5_div_exte">
-                <i class="far fa-check-circle"></i>
-                <h1>TRUSTED BY 10,000+ CUSTOMERS</h1>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts.</p>
-                <button>LEARN MORE</button>
-            </div>
-        </div>
-
-        <div class="col-4 ">
-            <div class="section_5_div_inte">
-                <i class="fas fa-paper-plane"></i>
-                <h1>VERY FAST SHIPPING</h1>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts.</p>
-                <button>LEARN MORE</button>
-            </div>
-        </div>
-
-        <div class="col-4">
-            <div class="section_5_div_exte">
-                <i class="far fa-check-circle"></i>
-                <h1>TRUSTED BY 10,000+ CUSTOMERS</h1>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts.</p>
-                <button>LEARN MORE</button>
-            </div>
-
-        </div>
 
 
 
-    </section>
-    <!-- FOOTER______ -->
-    <footer>
-        <!-- footer haut -->
-        <div class="row">
-            <div class="col-4 p-0">
-                <h2>ABOUT US</h2>
-                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
-                    which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which
-                    was created for the bliss of</p>
-            </div>
-            <div class="col-4 p-0">
-                <h2>RECENT POSTS</h2>
-                <div>> <span>hello world!</span></div>
-                <hr>
-                <div>> <span>Wonderful serenity has taken</span></div>
-                <hr>
-                <div>> <span>In my soul and absorb its power</span></div>
-                <hr>
-                <div>> <span>I hear the buzz of the little</span></div>
-                <hr>
-            </div>
-            <div class="col-4 p-0">
-                <h2>TAG CLOUD</h2>
-                <div>
-                    <span class="tag_cloud">BUSINESS</span>
-                    <span class="tag_cloud">CONFERENCE</span>
-                    <br>
-                    <span class="tag_cloud">GADGETS</span>
-                    <span class="tag_cloud">IDENTITY</span>
-                    <br>
-                    <span class="tag_cloud">LOGO</span>
-                    <span class="tag_cloud">PHOTOGRAPHY</span>
-                    <br>
-                    <span class="tag_cloud">TIME</span>
-                    <span class="tag_cloud">TRIPS</span>
-                    <br>
-                    <span class="tag_cloud">WORKS</span>
-                    <span class="tag_cloud">WORK SPACE</span></span>
+
+
+
+    <!-- connexion -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text-center my-5">CONNEXION A VOTRE COMPTE</h2>
+            <div class="row mb-5 ">
+                <div class="col-6 text-center">
+                    <p>Vous possedez déja un compte?</p>
+                    <button id="myBtn2">Connectez-vous</button>
+                </div>
+
+                <div class="col-6 text-center">
+                    <p>Vous désirez créer un compte?</p>
+                    <button id="myBtn3">Inscrivez-vous</button>
                 </div>
             </div>
         </div>
-        <!-- footer bas -->
-        <h1>COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</h1>
-    </footer>
+    </div>
+
+
+    <!-- connectez vous -->
+
+    <!-- The Modal 2-->
+    <div id="myModal2" class="modal2">
+
+        <!-- Modal content -->
+        <div class="modal-content2">
+            <span class="close2">&times;</span>
+            <h2 class="text-center my-5">CONNECTEZ-VOUS A VOTRE COMPTE</h2>
+            <div class=" mb-5 modal2_content_div">
+                <p> Introduisez votre Email</p>
+                <input class="mb-3" type="email" placeholder="Votre em@il ici" name="email">
+                <p> Introduisez votre mot de passe</p>
+                <input class="mb-3" type="password" placeholder="Votre mot de passe" name="password">
+                <button class="btn_se_connecter" type="submit">connexion</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- inscrivez vous -->
+
+    <!-- The Modal 3-->
+    <div id="myModal3" class="modal3">
+
+        <!-- Modal content -->
+        <div class="modal-content3">
+            <span class="close3">&times;</span>
+            <h2 class="text-center my-5">CREEZ VOTRE COMPTE</h2>
+            <div class=" mb-5 modal3_content_div">
+                <p> Introduisez votre Nom</p>
+                <input class="mb-3" type="text" placeholder="Votre nom ici" name="email">
+                <p> Introduisez votre Prénom</p>
+                <input class="mb-3" type="text" placeholder="Votre prénom ici" name="email">
+                <p> Introduisez votre Age</p>
+                <input class="mb-3" type="number" placeholder="Votre age ici" name="email">
+                <p> Introduisez votre Email</p>
+                <input class="mb-3" type="email" placeholder="Votre em@il ici" name="email">
+                <p> Introduisez votre mot de passe</p>
+                <input class="mb-4" type="password" placeholder="Votre mot de passe" name="password">
+                <button class="btn_s_inscrire" type="submit">Je m'inscris</button>
+
+
+
+
+            </div>
+        </div>
+    </div>
 
 
 
@@ -327,7 +437,10 @@
 
 
 
-    <script src="./public/js/main.js"></script>
+
+
+
+    <script type="module" src="./public/js/main.js"></script>
 </body>
 
 </html>
